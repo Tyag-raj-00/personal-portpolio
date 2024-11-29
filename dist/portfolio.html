@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyagaraj S D - Portfolio</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+
+       <!-- Link the script after the DOM elements -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="intro">
+                <h1>Tyagaraj S D</h1>
+                <p>AI Engineer at Deepcept AI</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="profile-photo">
+                <img src="images\tyag_profile.jpg" alt="Tyagaraj S D">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Tyagaraj S D, a passionate AI Engineer at Deepcept AI. I specialize in AI/ML, 
+                and I am proficient in Python, C#, and various advanced tools and frameworks.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>AI/ML Development</li>
+                <li>Python & C# Programming</li>
+                <li>Docker & ROS</li>
+                <li>Hugging Face & LLaMA</li>
+                <li>SQL & Data Analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1: Text-to-Image Generation Using Hugging Face Model "MoonDream</h3>
+                <p>I developed a Text-to-Image Generation project that utilizes the Hugging Face model "MoonDream" to transform text into visually stunning images. Integrated with a Telegram bot, users can simply type a sentence or speak their idea, and the bot will generate images that match their text or spoken prompts. This project highlights my skills in AI/ML, interactive development, and user-centric design, creating a seamless and engaging experience for users..</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: Gun Detection Using YOLOv7 Model</h3>
+                <p>In this project, I leveraged the YOLOv7 model, known for its high accuracy and speed, to create a real-time object detection system focused on detecting guns. While YOLOv7 is trained on 80 classes, I customized it to detect a single class — guns — ensuring precise and reliable identification. This project showcases my expertise in computer vision and deep learning, demonstrating the application of advanced models to enhance safety and security</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2:  Chikmagalur Travel Guide Website</h3>
+                <p>I developed a comprehensive Chikmagalur Travel Guide website designed to enhance the travel experience for users exploring this beautiful destination. The website features detailed information about popular attractions, local cuisine, accommodations, and travel tips. With interactive maps and user-friendly navigation, visitors can easily plan their trip and discover key spots in Chikmagalur. This project showcases my ability to create functional and visually appealing web applications that serve as practical resources for travelers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="user_name" id="name" placeholder="Your Name" required>
+                <input type="email" name="user_email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>            
+            
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Points Section -->
+<section id="info">
+    <div class="container">
+        <h2>Contact Information</h2>
+        <div class="info-points">
+            <div class="info-item">
+                <h3>Phone</h3>
+                <p>+91 9663780827</p>
+            </div>
+            <div class="info-item">
+                <h3>Email</h3>
+                <p>tyagaraj.dhananjaya@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <h3>GitHub</h3>
+                <a href="https://github.com/tyagaraj-raj-2007" target="_blank">Visit My GitHub</a>
+            </div>
+            <div class="info-item">
+                <h3>Docker</h3>
+                <a href="https://hub.docker.com/u/tyagarajsd1705" target="_blank">View My Docker Hub</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Tyagaraj S D. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
